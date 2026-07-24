@@ -11,12 +11,10 @@ export function Layout() {
 
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="sticky top-0 z-10 flex flex-wrap items-center justify-between gap-3 bg-forest px-6 py-3 text-cream">
+      <header className="sticky top-0 z-10 flex flex-wrap items-center justify-between gap-3 border-b border-gold/20 bg-forest px-6 py-3 text-cream">
         <nav className="flex flex-wrap items-center gap-6">
           <NavLink to="/" className="flex items-center gap-2 font-serif-brand text-lg font-bold text-gold" end>
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-gold text-sm font-bold text-forest">
-              C
-            </span>
+            <img src="/cavaro-logo.png" alt="CavaroHub" className="h-8 w-8 object-contain" />
             CavaroHub
           </NavLink>
           <div className="flex flex-wrap gap-4">
