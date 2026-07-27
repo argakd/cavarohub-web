@@ -50,7 +50,7 @@ export function ResetPasswordPage() {
         <CardContent>
           {error && <p className="mb-3 text-sm font-medium text-destructive">{error}</p>}
           {done ? (
-            <p className="text-sm font-medium text-green-700">Password updated! Redirecting to sign in&hellip;</p>
+            <p className="text-sm font-medium text-green-700">Password updated. Redirecting&hellip;</p>
           ) : (
             <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
               <div className="flex flex-col gap-1">

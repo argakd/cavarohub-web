@@ -274,7 +274,7 @@ export function OrganizerEventManagePage() {
       <ConfirmDialog
         open={confirmDeleteOpen}
         title="Delete this event?"
-        description="This can't be undone. Events with existing transactions can't be deleted — cancel or resolve them first."
+        description="This can't be undone."
         confirmLabel="Delete event"
         destructive
         onConfirm={confirmDeleteEvent}

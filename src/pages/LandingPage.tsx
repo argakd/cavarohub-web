@@ -42,15 +42,14 @@ export function LandingPage() {
       <section className="bg-background px-6 py-16 text-foreground sm:py-24">
         <div className="mx-auto flex max-w-5xl flex-col items-start gap-6">
           <span className="inline-flex items-center gap-2 rounded-full bg-forest/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-forest">
-            <Sparkles className="h-3.5 w-3.5" /> Discover what's happening near
-            you
+            <Sparkles className="h-3.5 w-3.5" /> Discover Events
           </span>
           <h1 className="max-w-2xl text-4xl font-bold leading-tight sm:text-5xl">
-            Find, host, and manage events without the busywork
+            Find, host, and manage events
           </h1>
           <p className="max-w-xl text-muted-foreground">
-            CavaroHub connects hosts and attendees in one place: browse events,
-            grab tickets in a few clicks, and manage your own event's ticketing,
+            CavaroHub provides a plaform for organizing events,
+            grabbing tickets, and manage your own event,
             vouchers, and attendees from a single dashboard.
           </p>
           <div className="flex flex-wrap gap-3">
@@ -73,7 +72,7 @@ export function LandingPage() {
         <div className="flex flex-col gap-1">
           <h2 className="text-2xl font-bold">Upcoming events</h2>
           <p className="text-muted-foreground">
-            Filter by category and location, or search by name.
+            Filter by category and location, or search by event name.
           </p>
         </div>
 

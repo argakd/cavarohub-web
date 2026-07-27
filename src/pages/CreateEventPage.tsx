@@ -141,11 +141,9 @@ export function CreateEventPage() {
             </div>
 
             <div className="flex flex-col gap-1">
-              <Label htmlFor="bannerImageUrl">Banner image URL (optional)</Label>
+              <Label htmlFor="bannerImageUrl">Image URL (optional)</Label>
               <Input id="bannerImageUrl" type="url" placeholder="https://..." {...register("bannerImageUrl")} />
               <p className="text-xs text-muted-foreground">
-                Paste a link to an image (e.g. from Unsplash) — shown on the event card and event page. Leave blank
-                to use a plain category-colored placeholder instead.
               </p>
             </div>
 
@@ -163,7 +161,7 @@ export function CreateEventPage() {
             </div>
 
             <label className="flex items-center gap-2 text-sm">
-              <input type="checkbox" {...register("isPaid")} /> This is a paid event
+              <input type="checkbox" {...register("isPaid")} /> Paid event
             </label>
 
             {isPaid && !usesTicketTypes && (
@@ -182,7 +180,7 @@ export function CreateEventPage() {
 
             <div className="flex flex-col gap-2">
               <span className="text-sm font-semibold text-foreground/80">
-                Ticket types (optional — leave empty to use a single price/seat count above)
+                Ticket types (optional)
               </span>
               {fields.map((field, i) => (
                 <div key={field.id} className="flex items-end gap-2">
@@ -230,8 +228,8 @@ export function CreateEventPage() {
       <ConfirmDialog
         open={confirmOpen}
         title="Publish this event?"
-        description="Double-check the dates and pricing — you can still edit most details afterwards."
-        confirmLabel="Publish event"
+        description="You can still edit most details afterwards."
+        confirmLabel="Confirm"
         onConfirm={handleSubmit((values) => {
           setConfirmOpen(false);
           onConfirm(values);

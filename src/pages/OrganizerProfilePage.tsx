@@ -23,7 +23,7 @@ export function OrganizerProfilePage() {
       </Card>
 
       {summary.reviews.length === 0 ? (
-        <EmptyState title="No reviews yet" description="Reviews appear here once attendees rate events." />
+        <EmptyState title="No reviews yet" description="Reviews appear here" />
       ) : (
         <Card>
           <CardContent className="pt-5">

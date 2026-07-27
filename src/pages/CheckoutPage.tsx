@@ -82,7 +82,7 @@ export function CheckoutPage() {
       </div>
 
       <p className="text-sm text-muted-foreground">
-        Final total (after voucher/points) is calculated at checkout. Once you confirm, you'll have{" "}
+        Final total (after voucher/points) is calculated at checkout. After confirmation, you'll have{" "}
         <strong>2 hours</strong> to upload payment proof.
       </p>
 
