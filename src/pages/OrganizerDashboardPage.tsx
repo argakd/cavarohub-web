@@ -13,7 +13,7 @@ function BarChart({ buckets, valueKey }: { buckets: StatsBucket[]; valueKey: "re
   return (
     <div className="flex h-40 items-end gap-2 overflow-x-auto">
       {buckets.map((b) => (
-        <div key={b.period} className="flex min-w-[2.5rem] flex-col items-center gap-1">
+        <div key={b.period} className="flex min-w-10 flex-col items-center gap-1">
           <div
             className="w-8 rounded-t bg-gold"
             style={{ height: `${Math.max((b[valueKey] / max) * 100, 3)}%` }}

@@ -91,7 +91,7 @@ export function LandingPage() {
             }}
           >
             <SelectTrigger
-              className="w-auto min-w-[10rem]"
+              className="w-auto min-w-40"
               aria-label="Filter by category"
             >
               <SelectValue placeholder="All categories" />
